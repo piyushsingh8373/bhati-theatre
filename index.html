@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="icons/icon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4285f4" />
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="https://netflix-1uh.pages.dev/og.jpg"/>
+  <meta name="description"
+    content="Discover and stream your favorite movies and TV shows with BHATI JI KA THEATRE - an open source content search and watch website. Enjoy unlimited access to a vast library of content for free.">
+  <title>BHATIJI KA THEATRE</title>
+  <link rel="preload stylesheet" href="style.min.css" as="style">
+  <link rel="preload stylesheet" href="center-atom.min.css" as="style">
+  <!-- Google tag (gtag.js) -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-THTQ9GZQ0J">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-THTQ9GZQ0J');
+  </script>
+<!-- Serviceworker code for PWA  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('Service worker registered: ', registration.scope);
+        }).catch(function(error) {
+          console.log('Service worker registration failed: ', error);
+        });
+      });
+    }
+  </script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64c60eb01734a80012bd61d3&product=video-share-buttons&source=platform" async="async"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9489381289747189"
+     crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="search-container">
+    <input type="search" id="search-input" placeholder="Search any Movie/Webseries/Anime">
+    <button id="search-button">Search</button>
+  </div>
+  <center>
+    <div id="video" class="video">
+      <iframe id="iframe" scrolling="no" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <p style="color: rgb(79, 221, 221); font-weight: 500;">In case of any Error or Too Much Buffering click again on
+        your Movie poster down below or just change the Player from the right corner in video player. </p>
+      <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+      <div id="webSeriesData"></div>
+    </div>
+  </center>
+  <div id="results"></div>
+  <center style="margin-top: 2vh;">
+    <div class="alwaysVisibleContent">
+      <h1><u>BHATIJI KA THEATRE</u></h1>
+      <h2 style="color: rgb(55, 255, 255);">FREE MOVIE BHIDUU!!</h2>
+      <h3>Search any Movie/Webseries/Anime</h3>
+      <div class="pagelinks">
+        <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+        <a href="/terms-and-conditions.html" target="_blank">Terms And Conditions</a>
+        <a href="https://github.com/piyushsingh8373/bhati-theatre" target="_blank">Source Code</a>
+        <a href="/contact.html" target="_blank">Contact</a>
+      </div>
+    </div>
+    <div class="information">
+      <h2><u>PROJECT INFORMATION</u></h2>
+      <h3>Introduction</h3>
+
+      <p>Bhatiji ka theatre is a free movie dene wala systummmmm!!
+      </p>
+
+      <h3>Data Sources</h3>
+
+      <p>Bhatiji ka theatre retrieves data from TERKO KYA KARNA JANKE?</p>
+
+      <h3>User Interface</h3>
+
+      <p>The website has a simple and user-friendly interface, making it easy for users to navigate and search for
+        movies and TV shows. The no reload feature of this website makes it very unique and super fast. The page load
+        speed of this website is approximately 0.1 Seconds.</p>
+
+      <h3>Movie and TV Show Information</h3>
+
+      <p>The movie and TV show pages on Bhati ji ka theatre provide users with a wealth of information about the movie or
+        TV show. The page includes the poster thumbnail, and information about cast and crew. More information about the
+        Movies and Shows is intentionally not displayed, If you want to display that information then you can modify
+        that in the source code.</p>
+
+      <h3>Single Page Website</h3>
+
+      <p>It is important to note that Bhatiji ka theatre is a single page client side website and does not store any
+        information on its servers. All data is retrieved abhi to bola terko kya panchayat hai kha se lera hun ?
+        </p>
+
+      <h3>Source Code</h3>
+
+      <p>The Source Code of this Tool is available at Github repository by Piyush Bhati. You can access the repository
+        at <a style="color:rgb(0, 140, 255);margin:0%" title="Link to Github Repository" href="https://github.com/pulkitpareek18/netflix"
+          target="_blank">Here(Link to Github Repository)</a>.</p>
+
+      <h3>Conclusion</h3>
+
+      <p>In conclusion, Bhatiji ka theatre is an open-source bhiduu </p>
+
+      <h3>Libraries Used</h3>
+      <div class="footerLinks">
+        <a href="https://embed.smashystream.com/" target="_blank">Smashy Stream</a>
+        <a href="https://codebyzach.github.io/pace/" target="_blank">PACE</a>
+        <a href="https://tmdb.com" target="_blank">TMDB</a>
+        <a href="https://imdb.com" target="_blank">IMDB</a>
+      </div>
+    </div>
+  </center>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="script.min.js"></script>
+</body>
+</html>
