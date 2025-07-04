@@ -1,10 +1,15 @@
 let scrollLock = false;
-
 function scrollToTopControlled() {
   if (!scrollLock) {
     scrollLock = true;
     requestAnimationFrame(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    setTimeout(() => { scrollLock = false; }, 3000);
+  }
+}
+
+);
     });
     setTimeout(() => {
       scrollLock = false;
@@ -326,7 +331,7 @@ function setVideo(element) {
   const tmdbApiKey = "b6b677eb7d4ec17f700e3d4dfc31d005";
   const imdbID = element.getAttribute("IMDB");
   Pace.restart();
-  
+  scrollToTopControlled();
 
   // hide information
   window.dispatchEvent(new PopStateEvent("popstate"));
