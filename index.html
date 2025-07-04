@@ -110,54 +110,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://embed.smashystream.com/" target="_blank">Smashy Stream</a>
         <a href="https://codebyzach.github.io/pace/" target="_blank">PACE</a>
         <a href="https://tmdb.com" target="_blank">TMDB</a>
-        <a href="https://imdb.com" target="_blank">IMDB</a>
-          <!-- Responsive Bottom Banner Ad -->
-<style>
-  #responsive-ad-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Optional background */
-    padding: 5px 0;
-  }
-
-  #responsive-ad-container iframe {
-    max-width: 100%;
-    height: auto;
-  }
-
-  @media (max-width: 400px) {
-    #responsive-ad-container {
-      padding: 10px 0;
-    }
-  }
-</style>
-
-<div id="responsive-ad-container"></div>
-
-<script>
-  window.atOptions = {
-    key: '313a15ea9d101e0999fab3b7ae26cdc7',
-    format: 'iframe',
-    height: 250,
-    width: 300,
-    params: {}
-  };
-
-  (function () {
-    var s = document.createElement('script');
-    s.src = '//www.highperformanceformat.com/313a15ea9d101e0999fab3b7ae26cdc7/invoke.js';
-    s.async = true;
-    document.getElementById('responsive-ad-container').appendChild(s);
-  })();
-</script>
+        <a href="https://imdb.com" target="_blank">IMDB</a>        
       </div>
     </div>
   </center>
+  <!-- Inline Bottom Image-style Banner Ad -->
+<div id="inline-bottom-banner" style="width: 100%; text-align: center; margin-top: 50px;">
+</div>
+
+<script>
+  // Immediately load the ad when the page loads
+  window.addEventListener('DOMContentLoaded', function () {
+    window.atOptions = {
+      key: '313a15ea9d101e0999fab3b7ae26cdc7',
+      format: 'iframe',
+      height: 250,
+      width: 300,
+      params: {}
+    };
+
+    var s = document.createElement('script');
+    s.src = '//www.highperformanceformat.com/313a15ea9d101e0999fab3b7ae26cdc7/invoke.js';
+    s.async = true;
+
+    document.getElementById('inline-bottom-banner').appendChild(s);
+  });
+</script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="script.min.js"></script>  	
