@@ -1,22 +1,16 @@
 let scrollLock = false;
+
 function scrollToTopControlled() {
   if (!scrollLock) {
     scrollLock = true;
     requestAnimationFrame(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-    setTimeout(() => { scrollLock = false; }, 3000);
-  }
-}
-
-);
-    });
     setTimeout(() => {
       scrollLock = false;
     }, 3000);
   }
 }
-
 
 const htmlBody = document.querySelector("html, body");
 const results = document.querySelector("#results");
