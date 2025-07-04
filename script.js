@@ -1,10 +1,13 @@
-let hasScrolledToTop = false;
-function scrollToTopOnce() {
-  if (!hasScrolledToTop) {
+let scrollLock = false;
+function scrollToTopControlled() {
+  if (!scrollLock) {
+    scrollLock = true;
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    hasScrolledToTop = true;
+    setTimeout(() => { scrollLock = false; }, 3000);
   }
 }
+
+
 
 }
 
@@ -321,7 +324,7 @@ function setVideo(element) {
   const tmdbApiKey = "b6b677eb7d4ec17f700e3d4dfc31d005";
   const imdbID = element.getAttribute("IMDB");
   Pace.restart();
-  scrollToTopOnce();
+  scrollToTopControlled();
 
   // hide information
   window.dispatchEvent(new PopStateEvent("popstate"));
