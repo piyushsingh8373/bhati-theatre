@@ -52,46 +52,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <center>
     <div id="video" class="video">
       <iframe id="iframe" scrolling="no" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-       <div id="video-ad-slot" style="margin: 20px auto; max-width: 970px; text-align: center;">
-  <!-- Desktop Banner 728x90 -->
-  <div class="ad-desktop">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : '52c741c28bf869d9c3c08821e6f187e6',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/52c741c28bf869d9c3c08821e6f187e6/invoke.js"></script>
-  </div>
-
-  <!-- Mobile Banner 300x250 -->
-  <div class="ad-mobile" style="display:none;">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : '313a15ea9d101e0999fab3b7ae26cdc7',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/313a15ea9d101e0999fab3b7ae26cdc7/invoke.js"></script>
-  </div>
-</div>
+       <!-- Adsterra Responsive Banner Ad (Desktop: 728x90 | Mobile: 300x250) -->
+<div id="ad-container" style="margin: 20px auto; text-align: center;"></div>
 
 <style>
-  .ad-desktop { display: block; }
-  .ad-mobile { display: none; }
-
-  @media (max-width: 768px) {
-    .ad-desktop { display: none; }
-    .ad-mobile { display: block; }
+  #ad-container {
+    overflow: hidden;
+    background-color: transparent !important;
+  }
+  iframe {
+    background-color: transparent !important;
   }
 </style>
 
+<script type="text/javascript">
+  (function () {
+    const adContainer = document.getElementById('ad-container');
+    const isMobile = window.innerWidth <= 768;
+
+    const adSettings = {
+      key: isMobile ? '313a15ea9d101e0999fab3b7ae26cdc7' : '52c741c28bf869d9c3c08821e6f187e6',
+      width: isMobile ? 300 : 728,
+      height: isMobile ? 250 : 90,
+    };
+
+    adContainer.style.width = adSettings.width + 'px';
+    adContainer.style.height = adSettings.height + 'px';
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = `//www.highperformanceformat.com/${adSettings.key}/invoke.js`;
+    adContainer.appendChild(script);
+  })();
+</script>
       <p style="color: rgb(79, 221, 221); font-weight: 500;">In case of any Error or Too Much Buffering click again on
         your Movie poster down below or just change  Player from the right corner in video player </p>
       <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
