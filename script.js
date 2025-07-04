@@ -1,5 +1,25 @@
+let hasScrolledToTop = false;
+function scrollToTopOnce() {
+  if (!hasScrolledToTop) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    hasScrolledToTop = true;
+  }
+}
+
+}
+
 const htmlBody = document.querySelector("html, body");
 const results = document.querySelector("#results");
+
+const scrollToResults = () => {
+  const resultsTop = results.offsetTop;
+  htmlBody.scrollTo({
+    top: resultsTop,
+    behavior: "smooth",
+  });
+};
+
+
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 const resultsContainer = document.getElementById("results");
@@ -300,7 +320,8 @@ function setVideo(element) {
   const webSeriesData = document.getElementById("webSeriesData");
   const tmdbApiKey = "b6b677eb7d4ec17f700e3d4dfc31d005";
   const imdbID = element.getAttribute("IMDB");
-  Pace.restart();  
+  Pace.restart();
+  scrollToTopOnce();
 
   // hide information
   window.dispatchEvent(new PopStateEvent("popstate"));
