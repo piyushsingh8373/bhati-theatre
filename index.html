@@ -52,11 +52,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <center>
     <div id="video" class="video">
       <iframe id="iframe" scrolling="no" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <!-- Adsterra Responsive Banner: Properly Sized -->
+      <!-- Adsterra Ad Block -->
 <div class="ad-wrapper">
   <!-- Desktop Ad -->
   <div class="ad-desktop">
-    <div style="margin: 20px auto; max-width: 728px; text-align: center;">
+    <div class="ad-box" style="width:728px; height:90px; margin:20px auto;">
       <script type="text/javascript">
         atOptions = {
           'key': '52c741c28bf869d9c3c08821e6f187e6',
@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Mobile Ad -->
   <div class="ad-mobile">
-    <div style="margin: 20px auto; max-width: 320px; text-align: center;">
+    <div class="ad-box" style="width:320px; height:50px; margin:20px auto;">
       <script type="text/javascript">
         atOptions = {
           'key': '1a8df22757a0561c22c2a3699a1d6654',
@@ -96,13 +96,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .ad-mobile { display: block; }
   }
 
-  /* Global reset for iframe containers */
-  .ad-wrapper iframe {
-    display: block !important;
+  .ad-box iframe {
     width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
+    height: 100% !important;
+    border: none !important;
+    display: block !important;
   }
 </style>
       
