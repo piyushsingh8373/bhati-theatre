@@ -114,6 +114,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </center>
+  <!-- Responsive Bottom Banner Ad -->
+<style>
+  #responsive-ad-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional background */
+    padding: 5px 0;
+  }
+
+  #responsive-ad-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 400px) {
+    #responsive-ad-container {
+      padding: 10px 0;
+    }
+  }
+</style>
+
+<div id="responsive-ad-container"></div>
+
+<script>
+  window.atOptions = {
+    key: '313a15ea9d101e0999fab3b7ae26cdc7',
+    format: 'iframe',
+    height: 250,
+    width: 300,
+    params: {}
+  };
+
+  (function () {
+    var s = document.createElement('script');
+    s.src = '//www.highperformanceformat.com/313a15ea9d101e0999fab3b7ae26cdc7/invoke.js';
+    s.async = true;
+    document.getElementById('responsive-ad-container').appendChild(s);
+  })();
+</script>
   <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="script.min.js"></script>  	
   <script type='text/javascript' src='//pl27063288.profitableratecpm.com/c9/f3/0e/c9f30e33e6491a73139b686fd9a6192b.js'></script>	
