@@ -226,9 +226,9 @@ function episodeHighlight(cssidentification = "s1e1") {
 const PLAYER_CONFIG = {
   iframeId: "iframe",
   videoContainerId: "video",
-  embedMovieUrl: (tmdb) => `https://vidsrc.su/embed/movie/${tmdb}`,
+  embedMovieUrl: (tmdb) => `https://vidsrcme.ru/embed/movie/${tmdb}`,
   embedTvUrl: (tmdb, season, episode) =>
-    `https://vidsrc.su/embed/tv/${tmdb}/${season}/${episode}`,
+    `https://vidsrcme.ru/embed/tv/${tmdb}/${season}/${episode}`,
 };
 
 // Helper to get TMDB ID from IMDb ID
