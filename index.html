@@ -3,16 +3,19 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-P4MWL88M');</script>
-  <!-- End Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4MWL88M');</script>
+<!-- End Google Tag Manager -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9152815276062474"
      crossorigin="anonymous"></script>
-  <meta name="google-site-verification" content="3uk9gtSOYHyg1Pg3ATyXMgZqflFsg76VgBgSS5aWiaY" />
+  <meta name="google-site-verification" content="3uk9gtSOYHyg1Pg3ATyXMgZqflFsg76VgBgSS5aWiaY" />  
   <meta charset="UTF-8">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="icons/icon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#4285f4" />
   <meta name="robots" content="index, follow">
@@ -43,92 +46,152 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4MWL88M"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4MWL88M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <div class="search-container">
     <input type="search" id="search-input" placeholder="Search any Movie/Webseries/Anime">
     <button id="search-button">Search</button>
   </div>
-  
   <center>
     <div id="video" class="video">
       <iframe id="videoframe" scrolling="no" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      
       <!-- Adsterra Ad Block -->
-      <div class="ad-wrapper">
-        <!-- Desktop Ad -->
-        <div class="ad-desktop">
-          <div class="ad-box">
-            <script type="text/javascript">
-              atOptions = {
-                'key': '52c741c28bf869d9c3c08821e6f187e6',
-                'format': 'iframe',
-                'height': 90,
-                'width': 728,
-                'params': {}
-              };
-            </script>
-            <script type="text/javascript" src="https://www.highperformanceformat.com/52c741c28bf869d9c3c08821e6f187e6/invoke.js"></script>
-          </div>
-        </div>
+<div class="ad-wrapper">
+  <!-- Desktop Ad -->
+  <div class="ad-desktop">
+    <div class="ad-box" style="width:728px; height:90px; margin:20px auto;">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '52c741c28bf869d9c3c08821e6f187e6',
+          'format': 'iframe',
+          'height': 90,
+          'width': 728,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="https://www.highperformanceformat.com/52c741c28bf869d9c3c08821e6f187e6/invoke.js"></script>
+    </div>
+  </div>
 
-        <!-- Mobile Ad -->
-        <div class="ad-mobile">
-          <div class="ad-box">
-            <script type="text/javascript">
-              atOptions = {
-                'key': '1a8df22757a0561c22c2a3699a1d6654',
-                'format': 'iframe',
-                'height': 50,
-                'width': 320,
-                'params': {}
-              };
-            </script>
-            <script type="text/javascript" src="https://www.highperformanceformat.com/1a8df22757a0561c22c2a3699a1d6654/invoke.js"></script>
-          </div>
-        </div>
-      </div>
+  <!-- Mobile Ad -->
+  <div class="ad-mobile">
+    <div class="ad-box" style="width:320px; height:50px; margin:20px auto;">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '1a8df22757a0561c22c2a3699a1d6654',
+          'format': 'iframe',
+          'height': 50,
+          'width': 320,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="https://www.highperformanceformat.com/1a8df22757a0561c22c2a3699a1d6654/invoke.js"></script>
+    </div>
+  </div>
+</div>
 
-      <p style="color: rgb(79, 221, 221); font-weight: 500;">In case of any Error or Too Much Buffering click again on
-        your Movie poster down below or just change Player from the right corner in video player </p>
+<style>
+  .ad-desktop { display: block; }
+  .ad-mobile { display: none; }
+
+  @media (max-width: 768px) {
+    .ad-desktop { display: none; }
+    .ad-mobile { display: block; }
+  }
+
+  .ad-box iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    display: block !important;
+  }
+</style>
       
+       
+      <p style="color: rgb(79, 221, 221); font-weight: 500;">In case of any Error or Too Much Buffering click again on
+        your Movie poster down below or just change  Player from the right corner in video player </p>
+      <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
       <div id="webSeriesData"></div>
     </div>
   </center>
-
   <div id="results"></div>
-  
   <center style="margin-top: 2vh;">
     <div class="alwaysVisibleContent">
       <h1><u>BHATIJI KA THEATRE</u></h1>       
       <h2 style="color: rgb(55, 255, 255);">FREE MOVIE BHIDUU!!</h2>
       <h3>Search any Movie/Webseries/Anime</h3>
-    </div>    
+      </div>    
+    <div class="information">
+      <h2><u>PROJECT INFORMATION</u></h2>
+      <h3>Introduction</h3>
+
+      <p>Bhatiji ka theatre is a free movie dene wala systummmm!
+      </p>
+
+      <h3>Data Sources</h3>
+
+      <p>Bhatiji ka theatre retrieves data from TERKO KYA KARNA JANKE?</p>
+
+      <h3>User Interface</h3>
+
+      <p>The website has a simple and user-friendly interface, making it easy for users to navigate and search for
+        movies and TV shows. The no reload feature of this website makes it very unique and super fast. The page load
+        speed of this website is approximately 0.1 Seconds.</p>
+
+      <h3>Movie and TV Show Information</h3>
+
+      <p>The movie and TV show pages on Bhati ji ka theatre provide users with a wealth of information about the movie or
+        TV show. The page includes the poster thumbnail, and information about cast and crew. More information about the
+        Movies and Shows is intentionally not displayed, If you want to display that information then you can modify
+        that in the source code.</p>
+
+      <h3>Single Page Website</h3>
+
+      <p>It is important to note that Bhatiji ka theatre is a single page client side website and does not store any
+        information on its servers. All data is retrieved abhi to bola terko kya panchayat hai kha se lera hun ?
+        </p>
+
+      <h3>Source Code</h3>
+
+      <p>The Source Code of this Tool is available at Github repository by Piyush Bhati. You can access the repository.
+        at <a style="color:rgb(0, 140, 255);margin:0%" title="Link to Github Repository" href="https://github.com/piyushsingh8373/bhati-theatre"
+          target="_blank">Here(Link to Github Repository)</a>.</p>
+
+      <h3>Conclusion</h3>
+
+      <p>In conclusion, Bhatiji ka theatre is an open-source bhiduu </p>
+
+      <h3>Libraries Used</h3>
+      <div class="footerLinks">
+        <a href="https://embed.smashystream.com/" target="_blank">Smashy Stream</a>
+        <a href="https://codebyzach.github.io/pace/" target="_blank">PACE</a>
+        <a href="https://tmdb.com" target="_blank">TMDB</a>
+        <a href="https://imdb.com" target="_blank">IMDB</a>        
+      </div>
+    </div>
   </center>
+  <!-- Inline Bottom Image-style Banner Ad -->
+<div id="inline-bottom-banner" style="width: 100%; text-align: center; margin-top: 50px;">
+</div>
 
-  <div id="inline-bottom-banner" style="width: 100%; text-align: center; margin-top: 50px;">
-  </div>
+<script type="text/javascript">
+  atOptions = {
+  	'key' : '52c741c28bf869d9c3c08821e6f187e6',
+  	'format' : 'iframe',
+  	'height' : 90,
+  	'width' : 728,
+  	'params' : {}
+  };
+</script>
+<script
+  type="text/javascript"
+  src="//www.highperformanceformat.com/52c741c28bf869d9c3c08821e6f187e6/invoke.js"
+></script>
 
-  <script type="text/javascript">
-    atOptions = {
-      'key' : '52c741c28bf869d9c3c08821e6f187e6',
-      'format' : 'iframe',
-      'height' : 90,
-      'width' : 728,
-      'params' : {}
-    };
-  </script>
-  <script
-    type="text/javascript"
-    src="//www.highperformanceformat.com/52c741c28bf869d9c3c08821e6f187e6/invoke.js"
-  ></script>
 
   <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="script.min.js"></script>  	
   <script type='text/javascript' src='//pl27063288.profitableratecpm.com/c9/f3/0e/c9f30e33e6491a73139b686fd9a6192b.js'></script>	
 </body>
-
 </html>
-
