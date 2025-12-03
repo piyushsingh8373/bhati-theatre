@@ -175,7 +175,7 @@ h3 {
 }
 
 
-iframe {
+videoframe {
   width: 72vw;
   height: 36vw;
   box-shadow: rgba(211, 211, 211, 0.322) 0px 0px 7vw 1vw;
@@ -257,7 +257,7 @@ li {
 
 @media only screen and (max-width: 768px) {
 
-  iframe {
+  videoframe {
     width: 100vw !important;
     height: 50vw !important;
     /* display: none; */
