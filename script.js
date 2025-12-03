@@ -224,7 +224,7 @@ function episodeHighlight(cssidentification = "s1e1") {
 
 // === GLOBAL PLAYER CONFIGURATION ===
 const PLAYER_CONFIG = {
-  iframeId: "iframe",
+  iframeId: "videoframe",
   videoContainerId: "video",
   embedMovieUrl: (tmdb) => `https://vidsrcme.ru/embed/movie/${tmdb}`,
   embedTvUrl: (tmdb, season, episode) =>
