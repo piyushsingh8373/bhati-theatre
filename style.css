@@ -440,3 +440,52 @@ li {
     margin: 1vw;
   }
 }
+
+/* General ad container settings */
+.ad-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Desktop Ad */
+.ad-desktop .ad-box {
+  width: 100%;
+  max-width: 728px;  /* Default desktop width */
+  height: 90px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Mobile Ad */
+.ad-mobile .ad-box {
+  width: 100%;
+  max-width: 320px;  /* Default mobile width */
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsiveness: Hide desktop ad on smaller screens, show mobile ad */
+@media (max-width: 768px) {
+  .ad-desktop {
+    display: none;
+  }
+  .ad-mobile {
+    display: block;
+  }
+}
+
+/* Optional: For inline bottom banner */
+#inline-bottom-banner {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ad-box iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  display: block !important;
+}
